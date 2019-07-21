@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "app-post-list",
@@ -6,9 +6,10 @@ import { Component } from "@angular/core";
   styleUrls: ["./post-list.component.css"]
 })
 export class PostListComponent {
-  posts = [
-    {title: "First Post", content: "This is first post"},
-    {title: "Second Post", content: "This is Second post"},
-    {title: "Third Post", content: "This is Third post"}
-  ]
+  // posts = [
+  //   {title: "First Post", content: "This is first post"},
+  //   {title: "Second Post", content: "This is Second post"},
+  //   {title: "Third Post", content: "This is Third post"}
+  // ]
+  @Input() posts = [];
 }
