@@ -5,4 +5,10 @@ import { Component } from "@angular/core";
   templateUrl: "./post-list.component.html",
   styleUrls: ["./post-list.component.css"]
 })
-export class PostListComponent {}
+export class PostListComponent {
+  posts = [
+    {title: "First Post", content: "This is first post"},
+    {title: "Second Post", content: "This is Second post"},
+    {title: "Third Post", content: "This is Third post"}
+  ]
+}
